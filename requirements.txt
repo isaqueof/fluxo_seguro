@@ -1,5 +1,6 @@
-streamlit==1.49.1
-pandas==2.3.3
-numpy==2.3.4
-requests
-polyline
+streamlit==1.42.0
+pandas==2.2.2
+numpy==1.26.4
+pydeck==0.9.1
+altair<5.5.0
+typing-extensions>=4.11.0

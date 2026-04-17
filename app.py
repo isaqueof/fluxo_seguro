@@ -282,7 +282,8 @@ def main():
     col_a, col_b = st.columns([1, 1.2])
     with col_a:
         st.subheader("📉 Previsão de Vazão por Logradouro")
-        st.line_chart(df_vazao)
+        # Resetando o índice para garantir que o 'Tempo' seja tratado como eixo X corretamente no deploy
+        st.line_chart(df_vazao.reset_index(), x="Tempo")
         
     with col_b:
         st.subheader("⚠️ Central de Despacho (Contingência)")
