@@ -1,3 +1,5 @@
-streamlit
-pandas
-numpy
+streamlit==1.49.1
+pandas==2.3.3
+numpy==2.3.4
+requests
+polyline
